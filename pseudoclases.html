@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      .menu {
+        background-color: #1363a4;
+      }
+
+      .menu-nav {
+        list-style: none;
+      }
+
+      .menu-nav__item {
+        display: inline-block;
+      }
+
+      .menu-nav__item a {
+        color: #ffff;
+        text-decoration: none;
+      }
+
+      /*Pseudo clases*/
+      /*hover: cambia algo cuando pasa puntero por encima*/
+      .menu-nav__item a:hover {
+        color: black;
+      }
+
+      /*active: cambia algo cuando se clickea*/
+      .menu-nav__item a:active {
+        color: red;
+      }
+
+      /*Pseudo elementos*/
+      /*content: agrega un contenido*/
+      .menu-nav__item a::after {
+        content: " | ";
+      }
+
+      /*Diferencia entre pseudo clase y pseudo elemento*/
+      /*Pseudo clases: define un estado, interacción con el elemento*/
+      /*Pseudo elementos: estilo de un elemento*/
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <li class="menu-nav__item"><a href="">Inicio</a></li>
+          <li class="menu-nav__item"><a href="">Trabajos</a></li>
+          <li class="menu-nav__item"><a href="">Articulos</a></li>
+          <li class="menu-nav__item"><a href="">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <ul>
+          <li>Item</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+
+</html>

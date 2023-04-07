@@ -1,0 +1,28 @@
+/* Selectores*/
+
+/* Universal: "*" */
+*{
+  color: blue;
+}
+
+/*Para tipo específico: nombre del elemento (ej. "p")*/
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,h2{
+  background-color: black;
+}
+
+/*Para poner clases: ".nom_class"*/
+.p1{
+  text-align: right;
+}
+.p2{
+  font-weight: bold;
+}
+
+/*Para poner id: #nom_id*/
+#subtitulo{
+  color: red;
+}

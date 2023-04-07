@@ -1,0 +1,486 @@
+/*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto Mono';
+  font-size: 400;
+}
+
+/* =========== HOME =========== */
+.home-body{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* ENCABEZADO */
+.header{
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* REDES SOCIALES */
+.social{
+  background-color: rgb(0, 55, 119);
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-icons{
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: end;
+  margin-right: 3%;
+}
+
+.social-icons a{
+  color: #fff;
+  font-size: 28px;
+}
+
+.social-icons a:hover{
+  color: #494949;
+}
+
+.social-name{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-self: start;
+  margin-left: 3%;
+}
+
+.social-name h1{
+  color: #fff;
+  font-size: 28px;
+}
+
+/* NAVEGACIÓN */
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+}
+
+.nav-logo{
+  width: 50%;
+  margin-left: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.nav-logo i{
+  font-size: 50px;
+  color: rgb(0, 55, 119);
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+}
+
+.nav-logo i:hover{
+  color: rgb(2, 35, 72);
+}
+
+.nav-me{
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  margin-right: 6%;
+  size: 18px;
+}
+
+.nav-me a{
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+
+/* MAIN DE HOME */
+.home-main{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url('../img/cover.png');
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container{
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  margin-top: 15%;
+}
+
+.main-container__text{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+.main-container__link{
+  background-color: rgb(0, 123, 176);
+  display: flex;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 700;
+  align-items: center;
+  height: 20%;
+  border: solid #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.main-container__link:hover{
+  background-color: rgb(0, 140, 201);
+}
+
+/* =========== SKILLS =========== */
+.blogs-main{
+  display: grid;
+}
+
+.skills{
+  background-color: #e6e9ed;
+  padding: 3% 5% 6%;
+}
+
+.skills-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+}
+
+.skills-content img{
+  grid-column: 1;
+  width: 85%;
+  display: inline-block;
+  margin: 3% 0;
+}
+
+.skills-info{
+  grid-column: 2;
+}
+
+.skills-info h2{
+  margin-top: 3%;
+}
+
+.skills-info p{
+  margin: 9% 0;
+}
+
+/* =========== POSTS =========== */
+.posts{
+  padding: 0 5% 3%;
+}
+
+.posts h3{
+  border-bottom: 1px solid #cdd2da;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.posts-other{
+  display: inline-block;
+  padding: 1.5%;
+  max-width: 32%;
+  margin-bottom: 5%;
+}
+
+.posts-other img{
+  width: 100%;
+}
+
+.posts-other h4{
+  margin: 3% 0;
+}
+
+.posts-other p{
+  margin-bottom: 9%;
+}
+
+/* =========== BOTÓN =========== */
+.posts-btn{
+  text-decoration: none;
+  color: #000;
+  border: 1px solid rgb(0, 123, 176);
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+/* =========== FOOTER =========== */
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(2, 35, 72);
+  border-top: 25px solid rgb(0, 140, 201);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  color: #fff;
+}
+
+/* =========== PROFILE =========== */
+.profile{
+  padding: 3% 6%;
+  background-color: #e6e9ed;
+  margin-bottom: 1%;
+  display: flex;
+}
+
+.profile img{
+  width: 320px;
+  margin-right: 30px;
+}
+
+.project-container{
+  padding: 10%;
+}
+
+.project-container h3{
+  border-bottom: 1px solid #cdd2da;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.project{
+  display: inline-block;
+  padding: 15px;
+  max-width: 32%;
+  margin-bottom: 50px;
+}
+
+.project h4{
+  margin: 20px 0px;
+}
+
+.project p{
+  margin-bottom: 35px;
+}
+
+/* =========== SKILL POST =========== */
+.main-skill{
+  padding: 0 6% 3%;
+}
+
+.main-skill__post img{
+ display: inline-block;
+ padding: 0 4% 3%;
+ width: 100%;
+}
+
+.skill-post__content{
+  padding: 0 6% 3%;
+}
+
+.skill-post__content h4{
+  border-bottom: 1px solid #cdd2da;
+  padding: 20px 0;
+}
+
+.skill-post__content h1{
+  margin: 20px 0;
+  font-size: 35px;
+}
+
+/* =========== CONTACTO =========== */
+.section-contact{
+  width: 100%;
+  background-color: #e6e9ed;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6% 5%;
+}
+
+.contact{
+  display: flex;
+  padding: 2%;
+}
+
+.contact img{
+  width: 100px;
+  display: inline-block;
+  padding: 2%;
+}
+
+.contact-info{
+  padding: 2% 0;
+  width: 100%;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1%;
+}
+
+.contact-info p{
+  margin-top: 3%;
+  width: 100%;
+}
+
+/* RESPONSIVE DESIGN*/
+@media screen and (max-width:670px){
+  .section-contact{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .posts-other{
+    max-width: 48%;
+  }
+  .project-container{
+    max-width: 100%;
+  }
+  .project{
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width:544px){
+  .skills-content{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .skills-info{
+    grid-column: 1;
+  }
+  .grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+  }
+  .skills-content img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px) {
+    .profile{
+      display: grid;
+    }
+    .profile-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+    .project-container{
+      padding: 5%;
+    }
+
+    .list-projects{
+      display: inline-block
+    }
+
+    .project{
+      size: 100%;
+      padding: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+  .social-icons{
+    width: 70%;
+  }
+  .posts-other{
+    max-width: 100%;
+  }
+  .project{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:380px) {  
+  .social-icons{
+    width: 80%;
+  }
+
+  .social-icons a{
+    font-size: 24px;
+  }
+
+  .social-name h1{
+    font-size: 24px;
+  }
+
+  .nav-logo i{
+    font-size: 43px;
+  }
+
+  .nav-me a{
+    font-size: 14px;
+  }
+
+  .main-container__text{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media screen and (max-width:328px) {
+  .social-icons a{
+    font-size: 22px;
+  }
+
+  .social-name h1{
+    font-size: 22px;
+  }
+
+  .nav-logo i{
+    font-size: 39px;
+  }
+}
+
+@media screen and (max-width:300px) {
+  .social-icons a{
+    font-size: 20px;
+  }
+
+  .social-name h1{
+    font-size: 20px;
+  }
+
+  .nav-logo i{
+    font-size: 36px;
+  }
+
+  .main-container__text{
+    font-size: 24px;
+  }
+}
